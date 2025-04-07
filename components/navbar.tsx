@@ -11,7 +11,7 @@ import {
 } from "@tabler/icons-react";
 import { motion } from "motion/react";
 
-export default function FloatingDockDemo() {
+export default function FloatingDockComponent() {
 	const iconStyle = "h-full w-full text-neutral-500 dark:text-neutral-300";
 
 	const [time, setTime] = useState<string>("");
@@ -59,7 +59,6 @@ export default function FloatingDockDemo() {
 
 	return (
 		<>
-			{/* Left - Time */}
 			<motion.div
 				initial={{ x: -50, opacity: 0 }}
 				animate={{ x: 0, opacity: 1 }}
@@ -69,17 +68,18 @@ export default function FloatingDockDemo() {
 				{time}
 			</motion.div>
 
-			{/* Center - Floating Dock */}
+			<div className="fixed bottom-6 right-4 -translate-x-1/2 z-50 md:hidden">
+				<FloatingDock items={links} />
+			</div>
+
 			<motion.div
 				initial={{ y: -50, opacity: 0 }}
 				animate={{ y: 0, opacity: 1 }}
 				transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
-				className="fixed top-6 left-1/2 -translate-x-1/2 z-50"
+				className="fixed top-6 left-1/2 -translate-x-1/2 z-50 hidden md:block"
 			>
 				<FloatingDock items={links} mobileClassName="" />
 			</motion.div>
-
-			{/* Right - Label */}
 			<motion.div
 				initial={{ x: 50, opacity: 0 }}
 				animate={{ x: 0, opacity: 1 }}

@@ -109,7 +109,6 @@ const FloatingDockDesktop = ({
 
 function IconContainer({
   mouseX,
-  title,
   icon,
   href,
 }: {
