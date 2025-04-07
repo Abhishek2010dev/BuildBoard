@@ -5,7 +5,7 @@ import Image from "next/image";
 const headline = "Hi, I'm Abhishek — building fast, accessible web experiences";
 
 const AnimatedHeadline = () => (
-	<h1 className="relative z-10 mx-auto max-w-4xl text-center text-3xl font-bold leading-tight text-slate-700 md:text-5xl lg:text-7xl dark:text-slate-300">
+	<h1 className="relative z-10 mx-auto max-w-4xl text-center text-3xl font-bold leading-tight text-slate-300 md:text-5xl lg:text-7xl">
 		{headline.split(" ").map((word, index) => (
 			<motion.span
 				key={index}
@@ -69,11 +69,11 @@ export default function Hero() {
 					<Image
 						src="/images/hero.png"
 						alt="Portfolio preview"
-						className="aspect-[16/9] w-full object-cover"
+						className="w-full h-auto rounded-2xl"
 						width={1200}
 						height={675}
 						priority
-					/>
+					/>{" "}
 				</div>
 			</motion.div>
 		</section>
