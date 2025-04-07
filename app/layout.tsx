@@ -2,7 +2,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import FloatingDockDemo from "@/components/navbar";
+import FloatingDockComponent from "@/components/navbar";
 import Sideline from "@/components/Sideline";
 import Footer from "@/components/footer";
 
@@ -36,10 +36,22 @@ export default function RootLayout({
           defaultTheme="dark"
           disableTransitionOnChange
         >
-          <FloatingDockDemo />
-          <Sideline />
-          {children}
-          <Footer />
+          <div className="flex min-h-screen flex-col">
+            <header>
+              <FloatingDockComponent />
+            </header>
+
+            <main className="flex-1">
+              <section>
+                <Sideline />
+              </section>
+              {children}
+            </main>
+
+            <footer>
+              <Footer />
+            </footer>
+          </div>
         </ThemeProvider>
       </body>
     </html>
