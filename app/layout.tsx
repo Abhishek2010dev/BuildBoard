@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import FloatingDockDemo from "@/components/navbar";
+import Sideline from "@/components/Sideline";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,6 +36,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <FloatingDockDemo />
+          <Sideline />
           {children}
         </ThemeProvider>
       </body>
