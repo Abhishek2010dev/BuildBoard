@@ -1,9 +1,11 @@
 import AvatarComponent from "@/components/Avatar";
+import Information from "@/components/information";
 
 export default function About() {
   return (
-    <div className="flex justify-start px-4 mt-32">
+    <div className="flex flex-col md:flex-row gap-8 items-start w-full max-w-6xl mx-auto px-4 pt-24">
       <AvatarComponent />
+      <Information />
     </div>
   );
 }
