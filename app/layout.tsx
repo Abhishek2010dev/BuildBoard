@@ -41,7 +41,7 @@ export default function RootLayout({
               <FloatingDockComponent />
             </header>
 
-            <main className="flex-1">
+            <main className="min-h-screen bg-black text-white p-4 md:p-10">
               <section>
                 <Sideline />
               </section>
