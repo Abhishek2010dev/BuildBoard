@@ -5,7 +5,9 @@ export default function Home() {
   return (
     <>
       <section>
-        <BackgroundBeams />
+        <div className="hidden md:block">
+          <BackgroundBeams />
+        </div>
         <Hero />
       </section>
     </>
