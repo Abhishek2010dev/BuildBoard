@@ -53,6 +53,51 @@ export default function Information() {
 				</CardContent>
 			</Card>
 			<MarksChart />
+			<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+				<Card>
+					<CardHeader>
+						<CardTitle>Languages</CardTitle>
+						<CardDescription>Languages I can speak and write</CardDescription>
+					</CardHeader>
+					<CardContent>
+						<p>Hindi, English</p>
+					</CardContent>
+				</Card>
+
+				<Card>
+					<CardHeader>
+						<CardTitle>Programming Languages</CardTitle>
+						<CardDescription>Languages I use to build software</CardDescription>
+					</CardHeader>
+					<CardContent>
+						<p>Java, Rust, Go, TypeScript, Python</p>
+					</CardContent>
+				</Card>
+
+				<Card>
+					<CardHeader>
+						<CardTitle>Skills / Tech Stack</CardTitle>
+						<CardDescription>
+							Technologies and frameworks I use regularly
+						</CardDescription>
+					</CardHeader>
+					<CardContent>
+						<p>Next.js, SvelteKit, Axum, Tailwind CSS, Gin</p>
+					</CardContent>
+				</Card>
+
+				<Card>
+					<CardHeader>
+						<CardTitle>Operating System</CardTitle>
+						<CardDescription>
+							What I use daily to build and work
+						</CardDescription>
+					</CardHeader>
+					<CardContent>
+						<p>Arch Linux</p>
+					</CardContent>
+				</Card>
+			</div>{" "}
 		</motion.div>
 	);
 }
