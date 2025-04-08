@@ -1,6 +1,13 @@
 "use client";
 import { motion } from "motion/react";
-import { Card, CardContent, CardTitle } from "./ui/card";
+import {
+	Card,
+	CardContent,
+	CardDescription,
+	CardHeader,
+	CardTitle,
+} from "./ui/card";
+import { MarksChart } from "./marks-chart";
 
 export default function Information() {
 	return (
@@ -11,39 +18,41 @@ export default function Information() {
 			className="md:col-span-2 space-y-6"
 		>
 			<Card>
-				<CardContent className="p-4">
-					<h1 className="text-3xl font-bold tracking-tight pb-2">
-						Abhishek Kumar Singh
-					</h1>
-					<p className="text-sm text-neutral-400">
-						A passionate and curious programmer who loves to build with Rust and
-						TypeScript. Enjoys crafting fast backends with Axum and elegant
-						frontends using SvelteKit and Tailwind CSS. Keyboard-focused,
-						minimal, and prefers Arch Linux for full control.
+				<CardHeader>
+					<CardTitle>Abhishek Kumar Singh</CardTitle>
+					<CardDescription>
+						Rustacean & TypeScript developer with a deep love for minimalism.
+					</CardDescription>
+				</CardHeader>
+				<CardContent>
+					<p>
+						A curious and passionate programmer who enjoys building fast,
+						reliable backends with <strong>Rust + Axum</strong> and crafting
+						elegant frontends using <strong>SvelteKit</strong> and{" "}
+						<strong>Tailwind CSS</strong>. Fully keyboard-driven, minimal by
+						nature, and powered by <strong>Arch Linux</strong> for full system
+						control.
 					</p>
 				</CardContent>
 			</Card>
-
 			<Card>
-				<CardContent className="p-4">
-					<h5 className="text-2xl font-semibold tracking-tight">
-						Academic Details
-					</h5>
+				<CardHeader>
+					<CardTitle>Academic Details</CardTitle>
+					<CardDescription>
+						Current academic standing and recent achievements.
+					</CardDescription>
+				</CardHeader>
+				<CardContent>
 					<p className="text-sm text-neutral-300 mt-2">
-						<strong>School:</strong> Army Public School, ASC Center, Bangalore
+						<strong>School:</strong> Army Public School, ASC Centre, Bangalore
 					</p>
 					<p className="text-sm text-neutral-300">
-						<strong>Class:</strong> 9th (Scored 86% in Class 8)
+						<strong>Class:</strong> 9th &mdash; Scored <strong>86%</strong> in
+						Class 8
 					</p>
 				</CardContent>
 			</Card>
-
-			<Card>
-				<CardTitle> Academic Details</CardTitle>
-				<CardContent className="p-4">
-					<div className="h-64 mt-4"></div>
-				</CardContent>
-			</Card>
+			<MarksChart />
 		</motion.div>
 	);
 }
