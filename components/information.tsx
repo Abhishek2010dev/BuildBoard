@@ -87,53 +87,54 @@ export default function Information() {
 			</MotionCard>
 			<MarksChart />
 
-			<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+			<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 				<MotionCard
 					whileHover={{ scale: 1.01 }}
 					whileTap={{ scale: 0.99 }}
-					className="bg-transparent border-none shadow-none"
+					className="bg-transparent border-none shadow-none transition-transform duration-200"
 				>
-					<CardHeader className="flex flex-row items-start gap-4">
-						<Code className="w-7 h-7 text-primary mt-1" />
+					<CardHeader className="flex items-start gap-4">
+						<Code className="w-6 h-6 text-primary mt-1" aria-hidden="true" />
 						<div>
-							<CardTitle className="text-2xl font-semibold">
+							<CardTitle className="text-xl font-semibold tracking-tight">
 								Languages I Speak
 							</CardTitle>
-							<CardDescription className="text-base text-neutral-400 mt-1">
+							<CardDescription className="text-sm text-muted-foreground mt-1">
 								From low-level systems to expressive web UIs
 							</CardDescription>
 						</div>
 					</CardHeader>
-					<CardContent className="text-[15px] text-neutral-300 mt-2 flex flex-wrap">
+					<CardContent className="text-sm text-muted-foreground mt-3 flex flex-wrap gap-2">
 						<TechBadge>Rust</TechBadge>
 						<TechBadge>TypeScript</TechBadge>
 						<TechBadge>Go</TechBadge>
 						<TechBadge>Java</TechBadge>
-						<TechBadge>Python</TechBadge>
 					</CardContent>
 				</MotionCard>
 
 				<MotionCard
 					whileHover={{ scale: 1.01 }}
 					whileTap={{ scale: 0.99 }}
-					className="bg-transparent border-none shadow-none"
+					className="bg-transparent border-none shadow-none transition-transform duration-200"
 				>
-					<CardHeader className="flex flex-row items-start gap-4">
-						<LibraryBig className="w-7 h-7 text-primary mt-1" />
+					<CardHeader className="flex items-start gap-4">
+						<LibraryBig
+							className="w-6 h-6 text-primary mt-1"
+							aria-hidden="true"
+						/>
 						<div>
-							<CardTitle className="text-2xl font-semibold">
+							<CardTitle className="text-xl font-semibold tracking-tight">
 								Tech Stack
 							</CardTitle>
-							<CardDescription className="text-base text-neutral-400 mt-1">
+							<CardDescription className="text-sm text-muted-foreground mt-1">
 								Frameworks, tools & ecosystems I work with
 							</CardDescription>
 						</div>
 					</CardHeader>
-					<CardContent className="text-[15px] text-neutral-300 mt-2 flex flex-wrap">
+					<CardContent className="text-sm text-muted-foreground mt-3 flex flex-wrap gap-2">
 						<TechBadge>SvelteKit</TechBadge>
 						<TechBadge>Next.js</TechBadge>
 						<TechBadge>Axum</TechBadge>
-						<TechBadge>Tailwind CSS</TechBadge>
 						<TechBadge>Gin</TechBadge>
 					</CardContent>
 				</MotionCard>
