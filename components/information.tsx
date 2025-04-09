@@ -60,7 +60,11 @@ export default function Information() {
 				</CardContent>
 			</MotionCard>
 
-			<MotionCard whileHover={{ scale: 1.01 }} whileTap={{ scale: 0.99 }}>
+			<MotionCard
+				whileHover={{ scale: 1.01 }}
+				whileTap={{ scale: 0.99 }}
+				className="bg-transparent border-none shadow-none"
+			>
 				<CardHeader className="flex flex-row items-start gap-4">
 					<School className="w-7 h-7 text-primary mt-1" />
 					<div>
@@ -84,7 +88,11 @@ export default function Information() {
 			<MarksChart />
 
 			<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-				<MotionCard whileHover={{ scale: 1.01 }} whileTap={{ scale: 0.99 }}>
+				<MotionCard
+					whileHover={{ scale: 1.01 }}
+					whileTap={{ scale: 0.99 }}
+					className="bg-transparent border-none shadow-none"
+				>
 					<CardHeader className="flex flex-row items-start gap-4">
 						<Code className="w-7 h-7 text-primary mt-1" />
 						<div>
@@ -105,7 +113,11 @@ export default function Information() {
 					</CardContent>
 				</MotionCard>
 
-				<MotionCard whileHover={{ scale: 1.01 }} whileTap={{ scale: 0.99 }}>
+				<MotionCard
+					whileHover={{ scale: 1.01 }}
+					whileTap={{ scale: 0.99 }}
+					className="bg-transparent border-none shadow-none"
+				>
 					<CardHeader className="flex flex-row items-start gap-4">
 						<LibraryBig className="w-7 h-7 text-primary mt-1" />
 						<div>

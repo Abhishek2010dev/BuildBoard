@@ -37,7 +37,11 @@ const chartConfig = {
 
 export function MarksChart() {
 	return (
-		<MotionCard whileHover={{ scale: 1.01 }} whileTap={{ scale: 0.99 }}>
+		<MotionCard
+			whileHover={{ scale: 1.01 }}
+			whileTap={{ scale: 0.99 }}
+			className="bg-transparent border-none shadow-none"
+		>
 			<CardHeader className="flex flex-row items-start gap-4">
 				<BarChart3 className="w-6 h-6 text-primary mt-1" />
 				<div>
