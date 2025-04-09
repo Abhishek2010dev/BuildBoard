@@ -1,5 +1,4 @@
 import React from "react";
-import { Github } from "lucide-react";
 import {
 	IconBrandGithub,
 	IconBrandGmail,
