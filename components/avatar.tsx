@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import {
 	IconBrandLinkedin,
 	IconBrandGithub,
-	IconMail,
 	IconBrandGmail,
 } from "@tabler/icons-react";
 
