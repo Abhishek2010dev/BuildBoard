@@ -1,7 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { IconBrandLinkedin, IconBrandGithub } from "@tabler/icons-react";
+import {
+	IconBrandLinkedin,
+	IconBrandGithub,
+	IconMail,
+	IconBrandGmail,
+} from "@tabler/icons-react";
 
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"; // Adjust this path based on your structure
 
@@ -47,6 +52,7 @@ export default function AvatarComponent() {
 			</div>
 
 			{/* Social Links */}
+
 			<div className="flex gap-4 mt-2">
 				<a
 					href="https://github.com/Abhishek2010dev"
@@ -63,6 +69,12 @@ export default function AvatarComponent() {
 					className="text-neutral-700 dark:text-neutral-300 hover:text-blue-700 dark:hover:text-blue-400 transition-colors"
 				>
 					<IconBrandLinkedin className="w-5 h-5 sm:w-6 sm:h-6" />
+				</a>
+				<a
+					href="mailto:abhishekkumar2010dev@gmail.com"
+					className="text-neutral-700 dark:text-neutral-300 hover:text-blue-700 dark:hover:text-blue-400 transition-colors"
+				>
+					<IconBrandGmail className="w-5 h-5 sm:w-6 sm:h-6" />
 				</a>
 			</div>
 		</motion.div>
