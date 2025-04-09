@@ -1,6 +1,6 @@
 "use client";
 
-import { TrendingUp } from "lucide-react";
+import { TrendingUp, BarChart3 } from "lucide-react";
 import { Bar, BarChart, CartesianGrid, XAxis } from "recharts";
 
 import {
@@ -38,9 +38,12 @@ const chartConfig = {
 export function MarksChart() {
 	return (
 		<MotionCard whileHover={{ scale: 1.01 }} whileTap={{ scale: 0.99 }}>
-			<CardHeader>
-				<CardTitle>Subject Marks</CardTitle>
-				<CardDescription>Academic Performance out of 80</CardDescription>
+			<CardHeader className="flex flex-row items-start gap-4">
+				<BarChart3 className="w-6 h-6 text-primary mt-1" />
+				<div>
+					<CardTitle className="text-2xl">Subject Marks </CardTitle>
+					<CardDescription>Academic Performance out of 80</CardDescription>
+				</div>
 			</CardHeader>
 			<CardContent>
 				<ChartContainer config={chartConfig}>
