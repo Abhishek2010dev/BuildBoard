@@ -1,5 +1,5 @@
 "use client";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import {
 	Card,
 	CardContent,
@@ -97,7 +97,7 @@ export default function Information() {
 						<p>Arch Linux</p>
 					</CardContent>
 				</Card>
-			</div>{" "}
+			</div>
 		</motion.div>
 	);
 }
