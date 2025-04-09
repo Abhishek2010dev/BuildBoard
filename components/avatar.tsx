@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Github, Linkedin } from "lucide-react";
+import { IconBrandLinkedin, IconBrandGithub } from "@tabler/icons-react";
+
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"; // Adjust this path based on your structure
 
 export default function AvatarComponent() {
@@ -53,7 +54,7 @@ export default function AvatarComponent() {
 					rel="noopener noreferrer"
 					className="text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors"
 				>
-					<Github className="w-5 h-5 sm:w-6 sm:h-6" />
+					<IconBrandGithub className="w-5 h-5 sm:w-6 sm:h-6" />
 				</a>
 				<a
 					href="https://www.linkedin.com/in/abhishek-kumar-singh-3b5a612b9/"
@@ -61,7 +62,7 @@ export default function AvatarComponent() {
 					rel="noopener noreferrer"
 					className="text-neutral-700 dark:text-neutral-300 hover:text-blue-700 dark:hover:text-blue-400 transition-colors"
 				>
-					<Linkedin className="w-5 h-5 sm:w-6 sm:h-6" />
+					<IconBrandLinkedin className="w-5 h-5 sm:w-6 sm:h-6" />
 				</a>
 			</div>
 		</motion.div>
