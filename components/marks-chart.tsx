@@ -4,7 +4,6 @@ import { TrendingUp } from "lucide-react";
 import { Bar, BarChart, CartesianGrid, XAxis } from "recharts";
 
 import {
-	Card,
 	CardContent,
 	CardDescription,
 	CardFooter,
@@ -17,6 +16,7 @@ import {
 	ChartTooltip,
 	ChartTooltipContent,
 } from "@/components/ui/chart";
+import { MotionCard } from "./information";
 
 const chartData = [
 	{ subject: "Science", score: 77 },
@@ -37,7 +37,7 @@ const chartConfig = {
 
 export function MarksChart() {
 	return (
-		<Card>
+		<MotionCard whileHover={{ scale: 1.01 }} whileTap={{ scale: 0.99 }}>
 			<CardHeader>
 				<CardTitle>Subject Marks</CardTitle>
 				<CardDescription>Academic Performance out of 80</CardDescription>
@@ -72,6 +72,6 @@ export function MarksChart() {
 					Based on recent exam results.
 				</div>
 			</CardFooter>
-		</Card>
+		</MotionCard>
 	);
 }
