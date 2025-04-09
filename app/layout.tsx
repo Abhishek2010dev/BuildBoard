@@ -5,6 +5,7 @@ import "./globals.css";
 import FloatingDockComponent from "@/components/navbar";
 import Sideline from "@/components/sideline";
 import Footer from "@/components/footer";
+import MouseMoveEffect from "@/components/mouse-move-effect";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,6 +38,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <div className="flex min-h-screen flex-col">
+            <MouseMoveEffect />
             <header>
               <FloatingDockComponent />
             </header>

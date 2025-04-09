@@ -31,7 +31,11 @@ export default function Information() {
 			transition={{ duration: 0.6 }}
 			className="md:col-span-2 space-y-8"
 		>
-			<MotionCard whileHover={{ scale: 1.01 }} whileTap={{ scale: 0.99 }}>
+			<MotionCard
+				whileHover={{ scale: 1.01 }}
+				whileTap={{ scale: 0.99 }}
+				className="bg-transparent border-none shadow-none"
+			>
 				<CardHeader className="flex flex-row items-start gap-4">
 					<Cpu className="w-7 h-7 text-primary mt-1" />
 					<div>
