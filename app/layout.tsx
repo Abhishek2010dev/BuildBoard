@@ -30,30 +30,32 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex min-h-screen flex-col`}
       >
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
           disableTransitionOnChange
         >
-          <div className="flex min-h-screen flex-col">
-            <MouseMoveEffect />
-            <header>
-              <FloatingDockComponent />
-            </header>
+          <MouseMoveEffect />
+          <header>
+            <FloatingDockComponent />
+          </header>
 
-            <main className="min-h-screen bg-black text-white p-4 md:p-10">
-              <section>
-                <Sideline />
-              </section>
-              {children}
-            </main>
+          <main className="relative min-h-screen bg-black text-white p-4 md:p-10 overflow-hidden">
+            {/* Mobile Blur Overlay */}
+            <div className="absolute inset-0 bg-blue-500/30 backdrop-blur-sm sm:backdrop-blur-0 sm:bg-transparent z-0" />
 
-            <footer>
-              <Footer />
-            </footer>
-          </div>
+            <section className="relative z-10">
+              <Sideline />
+            </section>
+
+            <div className="relative z-10">{children}</div>
+          </main>
+
+          <footer>
+            <Footer />
+          </footer>
         </ThemeProvider>
       </body>
     </html>

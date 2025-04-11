@@ -7,8 +7,10 @@ import {
 
 export default function Footer() {
 	return (
-		<div className="text-white bg-black py-4">
-			<div className="container mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center justify-between">
+		<div className="relative overflow-hidden bg-black text-white py-4">
+			<div className="absolute inset-0 bg-blue-500/30 backdrop-blur-sm sm:backdrop-blur-0 sm:bg-transparent z-0" />
+
+			<div className="relative z-10 container mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center justify-between">
 				<div className="flex gap-4 mt-2">
 					<a
 						href="https://github.com/Abhishek2010dev"
